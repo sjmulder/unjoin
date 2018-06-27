@@ -1,0 +1,27 @@
+.Dd June 26, 2018
+.Dt UNJOIN 1
+.Os
+.Sh NAME
+.Nm unjoin
+.Nd split input lines on separators
+.Sh SYNOPSIS
+.Nm
+.Ar separator ...
+.Sh DESCRIPTION
+.Nm
+copies standard input to standard output,
+replacing occurences of any
+.Ar separator
+with a newline character.
+.Sh EXAMPLES
+Split on underscores and double colons:
+.Pp
+.Bd -literal -offset indent
+$ echo "one::two_three" | unjoin _ ::
+one
+two
+three
+.Ed
+.Sh AUTHORS
+.An Sijmen J. Mulder
+.Aq Mt ik@sjmulder.nl
