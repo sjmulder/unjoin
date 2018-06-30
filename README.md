@@ -30,6 +30,11 @@ Unix-likes:
     make install
     make uninstall
 
+## See also
+
+[sed(1)](https://man.openbsd.org/sed.1),
+[funjoin(1)](https://github.com/sjmulder/funjoin).
+
 ## Authors
 
 Sijmen J. Mulder (<ik@sjmulder.nl>)
