@@ -4,6 +4,10 @@
 #include <string.h>
 #include <err.h>
 
+#ifdef __OpenBSD__
+#include <unistd.h>
+#end
+
 #define LEN(a) (sizeof(a)/sizeof(*(a)))
 
 int
@@ -14,6 +18,11 @@ main(int argc, char **argv)
 	size_t maxlen = 0;
 	size_t buflen = 0;
 	int i;
+
+#ifdef __OpenBSD__
+	if (pledge("stdio", NULL) == -1)
+		err(1, "pledge");
+#endif
 
 	if (argc < 2) {
 		fputs("usage: unjoin SEPARATOR ...\n", stderr);
