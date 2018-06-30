@@ -1,0 +1,21 @@
+CFLAGS += -Wall -Wextra -ansi
+
+# BSD conventions by default, override to taste
+prefix  ?= /usr/local
+bindir  ?= $(prefix)/bin
+man1dir ?= $(prefix)/man/man1
+
+all: funjoin
+
+clean:
+	rm -f funjoin
+
+install:
+	install funjoin $(bindir)/
+	install funjoin.1 $(man1dir)/
+
+uninstall:
+	rm -f $(bindir)/funjoin
+	rm -f $(man1dir)/funjoin.1
+
+.PHONY: all clean install uninstall

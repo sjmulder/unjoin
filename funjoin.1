@@ -1,0 +1,52 @@
+.Dd June 28, 2018
+.Dt FUNJOIN 1
+.Os
+.Sh NAME
+.Nm funjoin
+.Nd split separated input into separate files
+.Sh SYNOPSIS
+.Nm
+.Op Fl f Ar prefix
+.Op Fl n Ar number
+.Ar separator ...
+.Sh DESCRIPTION
+.Nm
+splits standard input,
+separated by any
+.Ar separator ,
+into files named
+.Dq xx
+and two decimal digits.
+.Pp
+Options:
+.Bl -tag -width Ds
+.It Fl f Ar prefix
+Use
+.Ar prefix
+instead of
+.Dq xx .
+.It Fl n Ar number
+Use
+.Ar number
+of digits instead of 2.
+.El
+.Sh EXAMPLES
+Split on underscores and double colons:
+.Bd -literal -offset indent
+$ echo "one::two_three" | funjoin _ ::
+$ cat xx01
+two
+.Ed
+.Sh SEE ALSO
+.Xr csplit 1 ,
+.Xr split 1 ,
+.Xr unjoin 1 (same author).
+.Sh AUTHORS
+By
+.An Sijmen J. Mulder
+.Aq Mt ik@sjmulder.nl .
+Code based on
+.Xr unjoin 1
+by the same.
+Options and output file naming inspired by
+.Xr csplit 1 .
