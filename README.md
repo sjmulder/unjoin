@@ -1,6 +1,6 @@
 # funjoin
 
-Split separated input into separate files
+Split separated input into files
 
 ## Synopsis
 
@@ -13,7 +13,7 @@ named "xx" and two decimal digits.
 
 Options:
 
-**-f** _prefix_ -- use _prefix_ instead of "xx".
+**-f** _prefix_ -- Use _prefix_ instead of "xx".
 
 **-n** _number_ -- Use _number_ of digits instead of 2.
 
@@ -44,6 +44,6 @@ Unix-likes:
 ## Authors
 
 By Sijmen J. Mulder (<ik@sjmulder.nl>).
-Based on [unjoin](https://github.com/sjmulder/unjoin).
+Based on [unjoin(1)](https://github.com/sjmulder/unjoin).
 Options output file naming copied from OpenBSD
 [csplit(1)](https://man.openbsd.org/csplit.1).
