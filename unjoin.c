@@ -11,7 +11,7 @@ main(int argc, char **argv)
 {
 	char buf[4096];
 	size_t lens[512];
-	size_t maxlen;
+	size_t maxlen = 0;
 	size_t buflen = 0;
 	int i;
 
