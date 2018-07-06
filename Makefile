@@ -11,6 +11,7 @@ clean:
 	rm -f unjoin
 
 install:
+	install -d $(bindir) $(man1dir)
 	install unjoin $(bindir)/
 	install unjoin.1 $(man1dir)/
 
