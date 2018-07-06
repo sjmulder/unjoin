@@ -6,7 +6,7 @@
 
 #ifdef __OpenBSD__
 #include <unistd.h>
-#end
+#endif
 
 #define LEN(a) (sizeof(a)/sizeof(*(a)))
 
