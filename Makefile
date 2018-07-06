@@ -1,4 +1,5 @@
 CFLAGS += -ansi -g
+CFLAGS += -D_POSIX_C_SOURCE=200112L
 CFLAGS += -Wall -Wextra -pedantic
 
 # BSD conventions by default, override to taste
