@@ -1,4 +1,5 @@
-CFLAGS += -Wall -Wextra -ansi
+CFLAGS += -ansi -g
+CFLAGS += -Wall -Wextra -pedantic
 
 # BSD conventions by default, override to taste
 prefix  ?= /usr/local
