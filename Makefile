@@ -11,6 +11,7 @@ clean:
 	rm -f funjoin
 
 install:
+	install -d $(bindir) $(man1dir)
 	install funjoin $(bindir)/
 	install funjoin.1 $(man1dir)/
 
