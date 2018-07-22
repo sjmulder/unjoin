@@ -21,7 +21,7 @@ Options:
 
 Split on underscores and double colons:
 
-    $ echo "one::two_three" | function _ ::
+    $ echo "one::two_three" | funjoin _ ::
     $ cat xx01
     two
 
