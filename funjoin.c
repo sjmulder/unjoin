@@ -1,15 +1,17 @@
 /* funjoin.c - Copyright (c) 2018 Sijmen J. Mulder, see LICENSE.md */
 
+#ifdef __OpenBSD__
+/* for plegde */
+#define _BSD_SOURCE
+#include <unistd.h>
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
 #include <getopt.h>
 #include <err.h>
-
-#ifdef __OpenBSD__
-#include <unistd.h>
-#endif
 
 #define LEN(a) (sizeof(a)/sizeof(*(a)))
 
