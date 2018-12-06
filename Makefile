@@ -12,8 +12,8 @@ clean:
 
 install: unjoin
 	install -d $(DESTDIR)$(PREFIX)/bin $(DESTDIR)$(MANPREFIX)/man1
-	install unjoin   $(DESTDIR)$(PREFIX)/bin/
-	install unjoin.1 $(DESTDIR)$(MANPREFIX)/man1/
+	install -m755 unjoin   $(DESTDIR)$(PREFIX)/bin/
+	install -m644 unjoin.1 $(DESTDIR)$(MANPREFIX)/man1/
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/unjoin
