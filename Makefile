@@ -13,8 +13,8 @@ clean:
 
 install:
 	install -d $(DESTDIR)$(PREFIX)/bin $(DESTDIR)$(MANPREFIX)/man1
-	install funjoin   $(DESTDIR)$(PREFIX)/bin/
-	install funjoin.1 $(DESTDIR)$(MANPREFIX)/man1/
+	install -m755 funjoin   $(DESTDIR)$(PREFIX)/bin/
+	install -m644 funjoin.1 $(DESTDIR)$(MANPREFIX)/man1/
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/funjoin
