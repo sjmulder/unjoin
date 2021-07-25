@@ -45,7 +45,7 @@ Unix-likes:
 
 See also
 --------
-[sed(1)](https://man.openbsd.org/sed.1),
+[sed(1)](https://man.openbsd.org/sed.1).
 
 Authors
 -------
