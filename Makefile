@@ -10,6 +10,9 @@ all: unjoin
 clean:
 	rm -f unjoin
 
+check: all
+	echo one_two | ./unjoin _ >/dev/null
+
 install: unjoin
 	install -d $(DESTDIR)$(PREFIX)/bin $(DESTDIR)$(MANPREFIX)/man1
 	install -m755 unjoin   $(DESTDIR)$(PREFIX)/bin/
@@ -19,4 +22,4 @@ uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/unjoin
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/unjoin.1
 
-.PHONY: all clean install uninstall
+.PHONY: all clean check install uninstall
