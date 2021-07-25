@@ -1,0 +1,5 @@
+image: debian/stable
+sources:
+ - https://github.com/sjmulder/unjoin
+tasks:
+ - build: cd unjoin && make all check
