@@ -1,5 +1,5 @@
-TBD
----
+1.1 (2021-06-27)
+----------------
  - New: merged funjoin into this repo, including fixes below.
  - New: this CHANGELOG.md
 
