@@ -1,18 +1,16 @@
-# unjoin
-
+unjoin
+=====
 Split input lines on separators.
-
-## Synopsis
 
 **unjoin** _separator_ ...
 
-## Description
-
+Description
+-----------
 **unjoin** copies standard input to standard output, replacing occurences of
 any _separator_ with a newline character.
 
-## Examples
-
+Examples
+--------
 Split on underscores and double colons:
 
     $ echo "one::two_three" | unjoin _ ::
@@ -20,8 +18,8 @@ Split on underscores and double colons:
     two
     three
 
-## Building
-
+Building
+--------
 Unix-likes:
 
     make
@@ -30,11 +28,11 @@ Unix-likes:
     make install
     make uninstall
 
-## See also
-
+See also
+--------
 [sed(1)](https://man.openbsd.org/sed.1),
 [funjoin(1)](https://github.com/sjmulder/funjoin).
 
-## Authors
-
+Authors
+-------
 Sijmen J. Mulder (<ik@sjmulder.nl>)
