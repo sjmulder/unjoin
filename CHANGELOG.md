@@ -1,3 +1,7 @@
+1.0.2 (2021-07-26)
+------------------
+ - Fixed: 'make install' should depend on binary
+
 1.0.1 (2021-07-26)
 ------------------
  - New: DESTDIR support for `make [un]install`. Note that make variables were
