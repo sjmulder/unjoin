@@ -1,5 +1,5 @@
-TBD
----
+1.0.1 (2021-07-26)
+------------------
  - New: DESTDIR support for `make [un]install`. Note that make variables were
    also changed.
  - New: added this CHANGELOG.md.
