@@ -1,3 +1,7 @@
+TBD
+---
+ - Fix: removed leftover .travis.yml.
+
 1.1 (2021-06-27)
 ----------------
  - New: merged funjoin into this repo, including fixes below.
