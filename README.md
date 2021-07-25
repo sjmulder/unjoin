@@ -1,5 +1,9 @@
 funjoin
 =======
+[![Build status](
+ https://builds.sr.ht/~sjmulder/funjoin.svg)](
+ https://builds.sr.ht/~sjmulder/funjoin)
+
 Split separated input into files
 
 **unjoin** [**-f** _prefix_] [**-n** _number_] _separator_ ...

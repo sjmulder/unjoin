@@ -1,0 +1,5 @@
+image: debian/stable
+sources:
+ - https://github.com/sjmulder/funjoin
+tasks:
+ - build: cd dated && make all check
