@@ -49,6 +49,6 @@ See also
 
 Authors
 -------
-Sijmen J. Mulder (<ik@sjmulder.nl>)
+Sijmen J. Mulder (<ik@sjmulder.nl>).
 Options output file naming copied from OpenBSD
 [csplit(1)](https://man.openbsd.org/csplit.1).
