@@ -12,7 +12,7 @@ clean:
 check: funjoin
 	echo one_two | ./funjoin _ && rm xx01 xx02
 
-install:
+install: funjoin
 	install -d $(DESTDIR)$(PREFIX)/bin $(DESTDIR)$(MANPREFIX)/man1
 	install -m755 funjoin   $(DESTDIR)$(PREFIX)/bin/
 	install -m644 funjoin.1 $(DESTDIR)$(MANPREFIX)/man1/
